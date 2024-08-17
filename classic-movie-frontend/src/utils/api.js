@@ -1,5 +1,5 @@
 // src/utils/api.js
-const API_BASE_URL = 'https://cinestore-api-27869e0d503f.herokuapp.com/api'; 
+const API_BASE_URL = 'https://classic-movie-api.vercel.app/api'; 
 
 export const fetchMovies = async (page = 1, limit = 20, sortBy = 'name', sortOrder = 'asc') => {
   const response = await fetch(`${API_BASE_URL}/movies?page=${page}&limit=${limit}&sortBy=${sortBy}&sortOrder=${sortOrder}`);
