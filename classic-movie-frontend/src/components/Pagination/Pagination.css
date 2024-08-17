@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 0.5rem;
+  }
+  
+  .pagination li {
+    margin: 0;
+  }
+  
+  .pagination button {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover,
+  .pagination li.active button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }

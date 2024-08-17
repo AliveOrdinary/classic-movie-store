@@ -1,0 +1,46 @@
+
+.movie-carousel {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+  }
+  
+  .carousel-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-content > * {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 250px;
+    margin-right: 1rem;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--background-color);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
